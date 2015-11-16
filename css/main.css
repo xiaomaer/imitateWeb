@@ -348,6 +348,9 @@ h1{
     padding-left: 10px;
     position: relative;
 }
+#more,.notice,.tab{
+    color: black;
+}
 #more{
     position: absolute;
     right: 20px;
@@ -438,7 +441,7 @@ p{
     height: 30px;
     line-height: 30px;
     text-align: center;
-    color: gainsboro;
+    color: gray;
    border-top: 2px solid #cc6688;
 }
 /*细节样式：每部分表现各自的样式*/
