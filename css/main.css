@@ -624,6 +624,7 @@ h1 {
 
 #smallimgs li {
     margin: 10px 5px 0 0;
+    border: 2px solid transparent;
 }
 #smallimgs li:hover{
     border: 2px solid #cc6688;
