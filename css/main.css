@@ -550,16 +550,24 @@ h1 {
 .hasmenu:hover .smenu {
     background-color: crimson;
 }
+.hasmenutwo:hover .twocatalog {
+    display: block;
+}
 
-.catalogs {
+.catalogs,.twocatalog{
     position: absolute;
-    top: 40px;
-    left: -1px;
     background-color: white;
     display: none;
     z-index: 50;
 }
-
+.catalogs{
+    top: 40px;
+    left: -1px;
+}
+.twocatalog{
+    top: 0px;
+    left: 142px;
+}
 .class {
     display: block;
     width: 130px;
