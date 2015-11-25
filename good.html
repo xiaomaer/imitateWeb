@@ -146,11 +146,11 @@
             </div>
             <div id="smallimgs">
                 <ul>
-                    <li><img src="img/good1.jpg"/></li>
-                    <li><img src="img/good2.jpg"/></li>
-                    <li><img src="img/good3.jpg"/></li>
-                    <li><img src="img/good4.jpg"/></li>
-                    <li><img src="img/good5.jpg"/></li>
+                    <li style="border-color: #cc6688"><img src="img/good1.jpg" data-count="0"/></li>
+                    <li><img src="img/good2.jpg" data-count="1"/></li>
+                    <li><img src="img/good3.jpg" data-count="2"/></li>
+                    <li><img src="img/good4.jpg" data-count="3"/></li>
+                    <li><img src="img/good5.jpg" data-count="4"/></li>
                 </ul>
             </div>
         </div>
@@ -160,43 +160,71 @@
             <div class="goodinfo">此款韩版毛衣外套，是轮廓大衣，时尚，大气，衬皮肤。棉线舒服温暖，你喜欢韩风妹子的不错选择哦！</div>
             <div class="goodinfo">价格&nbsp;&nbsp;&nbsp;&nbsp;<span class="price">￥266</span></div>
             <div class="goodinfo">配送&nbsp;&nbsp;&nbsp;&nbsp;<span class="price">包邮</span></div>
-            <div class="goodinfo">尺码&nbsp;&nbsp;&nbsp;&nbsp;<p class="block">S</p>
+            <div class="goodinfo" id="size">尺码&nbsp;&nbsp;&nbsp;&nbsp;
+                <p class="block">S</p>
 
                 <p class="block">M</p>
 
                 <p class="block">L</p></div>
-            <div class="goodinfo">颜色&nbsp;&nbsp;&nbsp;&nbsp;<p class="block">粉色</p>
+            <div class="goodinfo" id="color">颜色&nbsp;&nbsp;&nbsp;&nbsp;<p class="block">粉色</p>
 
                 <p class="block">白色</p>
 
                 <p class="block">黑色</p></div>
             <div class="goodinfo">数量&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" min="1" id="num" value="1"/></div>
-            <div class="goodinfo"><input type="button" value="立即购买" class="btngood"/>&nbsp;&nbsp;&nbsp;&nbsp;<input
-                    type="button" value="加入购物车" class="btngood"/></div>
+            <div class="goodinfo"><input type="button" value="立即购买" class="btngood" id="btnbuy"/>&nbsp;&nbsp;&nbsp;&nbsp;<input
+                    type="button" value="加入购物车" class="btngood" id="btnadd"/></div>
         </div>
         <div id="recommend">
             <h2>热卖商品</h2>
-            <ul>
-                <li><a href="#" class="suggest"><img src="img/r1.jpg"></a>
 
-                    <div class="showprice">￥128.6</div>
-                </li>
-                <li><a href="#" class="suggest"><img src="img/r2.jpg"></a>
+            <div id="rgood">
+                <ul>
+                    <li><a href="#" class="suggest"><img src="img/r1.jpg"></a>
 
-                    <div class="showprice">￥238.6</div>
-                </li>
-                <li><a href="#" class="suggest"><img src="img/r3.jpg"></a>
+                        <div class="showprice">￥128.6</div>
+                    </li>
+                    <li><a href="#" class="suggest"><img src="img/r2.jpg"></a>
 
-                    <div class="showprice">￥158.6</div>
-                </li>
-                <li><a href="#" class="suggest"><img src="img/r4.jpg"></a>
+                        <div class="showprice">￥238.6</div>
+                    </li>
+                    <li><a href="#" class="suggest"><img src="img/r3.jpg"></a>
 
-                    <div class="showprice">￥268.6</div>
-                </li>
-            </ul>
+                        <div class="showprice">￥158.6</div>
+                    </li>
+                    <li><a href="#" class="suggest"><img src="img/r4.jpg"></a>
+
+                        <div class="showprice">￥268.6</div>
+                    </li>
+                    <li><a href="#" class="suggest"><img src="img/r1.jpg"></a>
+
+                        <div class="showprice">￥128.6</div>
+                    </li>
+                    <li><a href="#" class="suggest"><img src="img/r2.jpg"></a>
+
+                        <div class="showprice">￥238.6</div>
+                    </li>
+                    <li><a href="#" class="suggest"><img src="img/r3.jpg"></a>
+
+                        <div class="showprice">￥158.6</div>
+                    </li>
+                    <li><a href="#" class="suggest"><img src="img/r4.jpg"></a>
+
+                        <div class="showprice">￥268.6</div>
+                    </li>
+                    <li><a href="#" class="suggest"><img src="img/r3.jpg"></a>
+
+                        <div class="showprice">￥158.6</div>
+                    </li>
+                    <li><a href="#" class="suggest"><img src="img/r4.jpg"></a>
+
+                        <div class="showprice">￥268.6</div>
+                    </li>
+                </ul>
+            </div>
             <div id="arrow">
-                <p class="arrtop"></p>
-                <p class="arrbot"></p>
+                <p id="arrtop"></p>
+                <p id="arrbot"></p>
             </div>
         </div>
     </div>
@@ -207,5 +235,7 @@
 <div id="footer">
     All Rights Reserved. xiaomaer 版权所有
 </div>
+<div id="showbigimg"><img src="img/good1.jpg" id="bigimg"></div>
+<script src="js/good.js"></script>
 </body>
 </html>

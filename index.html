@@ -186,18 +186,21 @@
             <li><a href="#"><img src="img/2.jpg"/></a></li>
             <li><a href="#"><img src="img/3.jpg"/></a></li>
             <li><a href="#"><img src="img/4.jpg"/></a></li>
+            <!--       <li><a href="#"><img src="img/1.jpg"/></a></li>
+                   <li><a href="#"><img src="img/2.jpg"/></a></li>
+                   <li><a href="#"><img src="img/3.jpg"/></a></li>
+                   <li><a href="#"><img src="img/4.jpg"/></a></li>-->
         </ul>
         <ul id="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li class="currimg" data-num="0"></li>
+            <li class="circle" data-num="1"></li>
+            <li class="circle" data-num="2"></li>
+            <li class="circle" data-num="3"></li>
         </ul>
-        <div class="arr left">
+        <div class="arr left" id="arrL">
             <div id="leftarr"></div>
         </div>
-        <div class="arr right">
+        <div class="arr right" id="arrR">
             <div id="rightarr"></div>
         </div>
     </div>
@@ -215,8 +218,10 @@
         <div id="tabs">
             <ul>
                 <li><a href="#" class="tab border activelink">话费</a>
+
                     <div class="tabctn active">
                         <p><label for="tel">号码：</label><input type="text" id="tel"/></p>
+
                         <p><label for="money">面值：</label><select id="money">
                             <option>100元</option>
                             <option>50元</option>
@@ -236,7 +241,7 @@
 
                         <p><label for="end">达到：</label><input type="text" id="end"/></p>
 
-                        <p><label for="date">日期：</label><input type="text" id="date"/></p>
+                        <p><label for="date">日期：</label><input type="datetime-local" id="date"/></p>
 
                         <p>
                             <button type="button">查找</button>
@@ -246,13 +251,25 @@
                 <li><a href="#" class="tab border">电影</a>
 
                     <div class="tabctn">
-                        购电影票
+                        <p><label for="film">电影名称：</label><input type="text" id="film"/></p>
+
+                        <p><label for="fdate">日期：</label><input type="date" id="fdate"/></p>
+
+                        <p><label for="ftime">时间：</label><input type="time" id="ftime"/></p>
+
+                        <p>
+                            <button type="button">购买</button>
+                        </p>
                     </div>
                 </li>
                 <li><a href="#" class="tab">旅游</a>
 
                     <div class="tabctn">
-                        购景点门票
+                        <p><label for="tourist ">景点名称：</label><input type="text" id="tourist "/></p>
+
+                        <p><label for="traveldate">日期：</label><input type="date" id="traveldate"/></p>
+                        <button type="button">购买</button>
+                        </p>
                     </div>
                 </li>
             </ul>
@@ -260,22 +277,33 @@
     </div>
     <div id="showgoods">
         <ul>
-            <li><a href="#"><img src="img/1.png"></a></li>
-            <li><a href="#"><img src="img/2.png"></a></li>
-            <li><a href="#"><img src="img/3.png"></a></li>
-            <li><a href="#"><img src="img/4.png"></a></li>
-            <li><a href="#"><img src="img/5.png"></a></li>
-            <li><a href="#"><img src="img/1.png"></a></li>
-            <li><a href="#"><img src="img/2.png"></a></li>
-            <li><a href="#"><img src="img/3.png"></a></li>
-            <li><a href="#"><img src="img/4.png"></a></li>
-            <li><a href="#"><img src="img/5.png"></a></li>
+            <li><a href="good.html"><img src="img/1.png"></a></li>
+            <li><a href="good.html"><img src="img/2.png"></a></li>
+            <li><a href="good.html"><img src="img/3.png"></a></li>
+            <li><a href="good.html"><img src="img/4.png"></a></li>
+            <li><a href="good.html"><img src="img/5.png"></a></li>
+            <li><a href="good.html"><img src="img/1.png"></a></li>
+            <li><a href="good.html"><img src="img/2.png"></a></li>
+            <li><a href="good.html"><img src="img/3.png"></a></li>
+            <li><a href="good.html"><img src="img/4.png"></a></li>
+            <li><a href="good.html"><img src="img/5.png"></a></li>
+            <li><a href="good.html"><img src="img/1.png"></a></li>
+            <li><a href="good.html"><img src="img/2.png"></a></li>
+            <li><a href="good.html"><img src="img/3.png"></a></li>
+            <li><a href="good.html"><img src="img/4.png"></a></li>
+            <li><a href="good.html"><img src="img/5.png"></a></li>
+            <li><a href="good.html"><img src="img/1.png"></a></li>
+            <li><a href="good.html"><img src="img/2.png"></a></li>
+            <li><a href="good.html"><img src="img/3.png"></a></li>
+            <li><a href="good.html"><img src="img/4.png"></a></li>
+            <li><a href="good.html"><img src="img/5.png"></a></li>
         </ul>
     </div>
 </div>
 <div id="footer">
     All Rights Reserved. xiaomaer 版权所有
 </div>
+<script src="js/home.js"></script>
 </body>
 
 </html>

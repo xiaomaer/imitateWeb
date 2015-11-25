@@ -291,6 +291,11 @@ h3 {
     height: 360px;
     position: absolute;
     left: 0px;
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -o-transition: left 1s;
+    -ms-transition: left 1s;
+    transition: left 1s;
 }
 
 #imgs li {
@@ -306,7 +311,7 @@ h3 {
     text-align: center;
 }
 
-#circles li {
+#circles > li {
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -314,7 +319,14 @@ h3 {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
+}
+
+.circle {
     background-color: black;
+}
+
+.currimg {
+    background-color: white;
 }
 
 .arr {
@@ -322,15 +334,24 @@ h3 {
     height: 40px;
     line-height: 40px;
     background-color: black;
-    opacity: 0.5;
     position: absolute;
     top: 50%;
     margin-top: -20px;
+    opacity:0.5;
+    display: none;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+#turnimg:hover .arr {
+   display: block;
 }
 
 .left {
     left: 10px;
-
 }
 
 .right {
@@ -422,7 +443,7 @@ h1 {
 
 .tab {
     display: block;
-    width: 76.25px;
+    width: 76px;
     height: 30px;
     line-height: 30px;
     background-color: #f5f5f5;
@@ -443,27 +464,30 @@ h1 {
     left: 0px;
     display: none;
 }
-.active{
+
+.active {
     display: block;
 }
-.activelink{
+
+.activelink {
     background-color: white;
     border-bottom: 0px;
 }
+
 .tabctn p {
     margin-top: 10px;
     text-indent: 10px;
     font-size: 13px;
 }
 
-#tabs li:hover .tab {
+/*#tabs li:hover .tab {
     background-color: white;
     border-bottom: 0px;
 }
 
 #tabs li:hover .tabctn {
     display: block;
-}
+}*/
 
 #showgoods {
     width: 980px;
@@ -490,6 +514,9 @@ h1 {
     height: 148px;
 }
 
+
+
+/*详情页*/
 #shop {
     width: 90%;
     overflow: hidden;
@@ -550,24 +577,28 @@ h1 {
 .hasmenu:hover .smenu {
     background-color: crimson;
 }
+
 .hasmenutwo:hover .twocatalog {
     display: block;
 }
 
-.catalogs,.twocatalog{
+.catalogs, .twocatalog {
     position: absolute;
     background-color: white;
     display: none;
     z-index: 50;
 }
-.catalogs{
+
+.catalogs {
     top: 40px;
     left: -1px;
 }
-.twocatalog{
+
+.twocatalog {
     top: 0px;
     left: 142px;
 }
+
 .class {
     display: block;
     width: 130px;
@@ -579,9 +610,11 @@ h1 {
     border: 1px solid #e4e4e4;
     border-top: 0px;
 }
-.class:hover{
+
+.class:hover {
     background-color: #e4e4e4;
 }
+
 #goodshow {
     width: 1190px;
     height: 520px;
@@ -595,7 +628,7 @@ h1 {
     margin: 20px;
 }
 
-#imags, #bigimgs,#bigimgs li,#bigimgs img, #smallimgs {
+#imags, #bigimgs, #bigimgs li, #bigimgs img, #smallimgs {
     width: 400px;
 }
 
@@ -617,7 +650,7 @@ h1 {
     left: 0px;
 }
 
-#smallimgs img,#smallimgs li{
+#smallimgs img, #smallimgs li {
     width: 70px;
     height: 70px;
 }
@@ -625,9 +658,6 @@ h1 {
 #smallimgs li {
     margin: 10px 5px 0 0;
     border: 2px solid transparent;
-}
-#smallimgs li:hover{
-    border: 2px solid #cc6688;
 }
 
 #imgtxt {
@@ -656,9 +686,13 @@ h1 {
     border: 1px solid #e4e4e4;
     margin-right: 8px;
 }
-.block:hover{
+.blockactive{
     border: 1px solid #cc6688;
 }
+.block:hover {
+    border: 1px solid #cc6688;
+}
+
 .price {
     font-size: large;
     color: #cc6688;
@@ -679,50 +713,94 @@ h1 {
     font-size: medium;
     color: white;
 }
-#recommend{
+
+#recommend {
     width: 170px;
-    text-align: center;
 }
-#recommend h2{
+
+#recommend h2 {
     width: 100%;
     height: 26px;
     line-height: 26px;
     border-bottom: 1px dashed black;
     margin-bottom: 5px;
 }
-#recommend li{
+#rgood{
     position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
 }
-#recommend img{
+#rgood>ul{
+    position: absolute;
+    top: 0px;
+    left: 35px;
+    height: 10000px;
+    -webkit-transition: top 1s;
+    -moz-transition: top 1s;
+    -o-transition: top 1s;
+    -ms-transition: top 1s;
+    transition:top 1s;
+}
+#recommend li {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+#recommend img,#recommend li{
     width: 100px;
     height: 100px;
 }
-.showprice{
+
+.showprice {
     position: absolute;
     width: 100px;
     height: 15px;
     line-height: 15px;
-    bottom: 3px;
-    left: 35px;
+    bottom: 0px;
     background-color: #e4e4e4;
     opacity: 0.9;
     font-size: 12px;
 }
-#arrow{
+
+#arrow {
     width: 100%;
     text-align: center;
     margin-top: 5px;
 }
-.arrtop,.arrbot{
+
+#arrtop, #arrbot {
     display: inline-block;
     width: 24px;
     height: 24px;
     background-position: center center;
     background-repeat: no-repeat;
 }
-.arrtop{
+
+#arrtop {
     background-image: url('../img/arrtop.png');
 }
-.arrbot{
+
+#arrbot {
     background-image: url('../img/arrbot.png');
+}
+#showbigimg{
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 800px;
+    height: 500px;
+    line-height: 500px;
+    text-align: center;
+    background: black;
+    overflow: hidden;
+    display: none;
+    z-index: 100;
+}
+#showbigimg img{
+    width: 600px;
+    height: 500px;
 }
