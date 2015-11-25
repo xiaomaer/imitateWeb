@@ -522,7 +522,9 @@ h1 {
     overflow: hidden;
     padding: 0px 5%;
 }
-
+#shop>a{
+    color: black;
+}
 #shopname, .query {
     height: 48px;
     line-height: 48px;
@@ -716,6 +718,7 @@ h1 {
 
 #recommend {
     width: 170px;
+    text-align: center;
 }
 
 #recommend h2 {
