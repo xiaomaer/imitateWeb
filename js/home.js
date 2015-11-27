@@ -164,7 +164,7 @@ doc.getElementById("circles").addEventListener("click", changimg.dotclick, false
 doc.getElementById("turnimg").addEventListener("mouseover", changimg.stopauto, false);
 //鼠标离开图片时自动轮播
 doc.getElementById("turnimg").addEventListener("mouseout", changimg.startauto, false);
-//鼠标悬浮图片上时切换至对应选项卡
+//鼠标悬浮列表项上时切换至对应选项卡
 doc.getElementById("tabs").addEventListener("mouseover", tabs.tabchange, false);
 //鼠标悬浮图片上时停止自动轮播
 doc.getElementById("showgoods").addEventListener("mouseover", bottomimg.stopauto, false);
