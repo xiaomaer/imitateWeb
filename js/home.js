@@ -90,7 +90,12 @@ var tabs = function () {
             target = e.target || e.srcElement;
         if (target.tagName.toLowerCase() === "a") {
             for (var i = 0; i < len; i++) {
-                tabs[i].className = "tab border";
+                if(i===len-1){
+                    tabs[i].className = "tab";
+                }
+                else{
+                    tabs[i].className = "tab border";
+                }
                 tabctns[i].className = "tabctn";
             }
             target.className += " activelink";
