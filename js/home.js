@@ -11,7 +11,7 @@ var changimg = function () {
         varywidth = imglist.offsetLeft,
         i = 0,
         timer;
-    //下一张图片
+    //下一张图片(不能实现无缝轮播，因为使用transition有过渡时间，不能瞬间切换图片)
     function nextimg() {
         if (varywidth > totalwidth) {
             varywidth -= imgwidth;
@@ -47,14 +47,18 @@ var changimg = function () {
     function dotimg(event) {
         var e = event || window.event,
             target = e.target || e.srcElement,
-            num = target.getAttribute("data-num");
-        varywidth = imgwidth * num * (-1);
-        imglist.style.left = varywidth + "px";
-        for (var j = 0; j < len; j++) {
-            circles[j].className = "circle";
+            num;
+        if(target.tagName.toLowerCase()==="li"){
+            num = parseInt(target.getAttribute("data-num"));
+            varywidth = imgwidth * num * (-1);
+            imglist.style.left = varywidth + "px";
+            for (var j = 0; j < len; j++) {
+                circles[j].className = "circle";
+            }
+            target.className = "currimg";
+            i = num;
         }
-        target.className = "currimg";
-        i = num;
+
     }
 
     //开启自动切换
@@ -110,9 +114,7 @@ var bottomimg = function () {
         speed = 2,
         currleft = 0,
         timer,
-        showimg = doc.getElementById("showbigimg"),
-        bigimg = doc.getElementById("bigimg"),
-        isState = true;//记录鼠标是否在大图上(注意变量不要和函数名重名)
+        bigimg = doc.getElementById("bigimg");
     function bottomimg() {
         if (currleft < totalwidth) {
             currleft = 0;

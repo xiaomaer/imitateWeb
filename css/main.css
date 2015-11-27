@@ -348,6 +348,7 @@ h3 {
 
 #turnimg:hover .arr {
    display: block;
+    cursor: pointer;
 }
 
 .left {
