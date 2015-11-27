@@ -1,4 +1,5 @@
 /*重用样式：多个页面可以公用的样式*/
+/*头部*/
 body {
     overflow-x: hidden; /*当浏览器调正的宽度小于页面宽度时，不显示横向滚动条*/
     font-family: "microsoft yahei";
@@ -124,7 +125,7 @@ a {
     border-left: 1px solid gainsboro;
     border-right: 1px solid gainsboro;
 }
-
+/*中间内容部分*/
 #content {
     width: 1192px;
     margin: 0px auto 10px auto;
@@ -165,7 +166,7 @@ a {
     position: relative;
     left: -5px;
 }
-
+/*底部*/
 #footer {
     margin: 30px auto 10px auto;
     width: 1192px;
