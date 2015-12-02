@@ -44,7 +44,7 @@ var goods = function () {
         }
     }
 
-    //鼠标在高清图上时，isout=false;鼠标在高清图外时，isout=true
+    //鼠标在高清图上时，isState=false;鼠标在高清图外时，isState=true
     function isout(event) {
         var e = event || window.event,
             type = e.type;

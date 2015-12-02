@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>商品详情页</title>
+    <title>商品详情页1：商品图片不带图片放大镜效果</title>
     <meta name="author" content="xiaoma"/>
     <meta name="description" content="imitateWeb"/>
     <meta name="keywords" content="good,detail"/>
@@ -93,7 +93,9 @@
 <div id="content">
     <div id="shop">
         <!--店铺名称-->
-        <a href="#"><div id="shopname">店铺：私房包袋</div></a>
+        <a href="#">
+            <div id="shopname">店铺：私房包袋</div>
+        </a>
         <!--搜索框-->
         <div id="search" class="query">
             <input type="text" id="select" placeholder="请输入搜索文字..."/>
@@ -135,24 +137,24 @@
     </div>
     <div id="goodshow">
         <div id="imags">
-            <div id="bigimgs">
-                <ul>
-                    <li><img src="img/good1.jpg"/></li>
-                    <li><img src="img/good2.jpg"/></li>
-                    <li><img src="img/good3.jpg"/></li>
-                    <li><img src="img/good4.jpg"/></li>
-                    <li><img src="img/good5.jpg"/></li>
-                </ul>
-            </div>
-            <div id="smallimgs">
-                <ul>
-                    <li style="border-color: #cc6688"><img src="img/good1.jpg" data-count="0"/></li>
-                    <li><img src="img/good2.jpg" data-count="1"/></li>
-                    <li><img src="img/good3.jpg" data-count="2"/></li>
-                    <li><img src="img/good4.jpg" data-count="3"/></li>
-                    <li><img src="img/good5.jpg" data-count="4"/></li>
-                </ul>
-            </div>
+             <div id="bigimgs">
+                 <ul>
+                     <li><img src="img/good1.jpg"/></li>
+                     <li><img src="img/good2.jpg"/></li>
+                     <li><img src="img/good3.jpg"/></li>
+                     <li><img src="img/good4.jpg"/></li>
+                     <li><img src="img/good5.jpg"/></li>
+                 </ul>
+             </div>
+             <div id="smallimgs">
+                 <ul>
+                     <li style="border-color: #cc6688"><img src="img/good1.jpg" data-count="0"/></li>
+                     <li><img src="img/good2.jpg" data-count="1"/></li>
+                     <li><img src="img/good3.jpg" data-count="2"/></li>
+                     <li><img src="img/good4.jpg" data-count="3"/></li>
+                     <li><img src="img/good5.jpg" data-count="4"/></li>
+                 </ul>
+             </div>
         </div>
         <div id="imgtxt">
             <h2>新品上市 连帽中长款毛衣外套 韩版大衣女</h2>
@@ -224,6 +226,7 @@
             </div>
             <div id="arrow">
                 <p id="arrtop"></p>
+
                 <p id="arrbot"></p>
             </div>
         </div>
@@ -235,6 +238,7 @@
 <div id="footer">
     All Rights Reserved. xiaomaer 版权所有
 </div>
+<!--显示高清大图-->
 <div id="showbigimg"><img src="img/good1.jpg" id="bigimg"></div>
 <script src="js/good.js"></script>
 </body>
